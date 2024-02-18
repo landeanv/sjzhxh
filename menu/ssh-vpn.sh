@@ -668,9 +668,9 @@ account default
 host smtp.gmail.com
 port 587
 auth on
-user vpncyber673@gmail.com
-from vpncyber673@gmail.com
-password tiscblgjyrahfjmi 
+user kuntul@gmail.com
+from kuntul@gmail.com
+password kuntul 
 logfile ~/.msmtp.log
 EOF
 chown -R www-data:www-data /etc/msmtprc
