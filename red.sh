@@ -1,18 +1,3 @@
-MYIP=$(curl -sS ipv4.icanhazip.com)
-red='\e[1;31m'
-green='\e[0;32m'
-yell='\e[1;33m'
-tyblue='\e[1;36m'
-NC='\e[0m'
-localip=$(hostname -I | cut -d\  -f1)
-hst=( `hostname` )
-dart=$(cat /etc/hosts | grep -w `hostname` | awk '{print $2}')
-if [[ "$hst" != "$dart" ]]; then
-echo "$localip $(hostname)" >> /etc/hosts
-fi
-if [ -f "/root/log-install.txt" ]; then
-rm -fr /root/log-install.txt
-fi
 mkdir -p /etc/xray
 mkdir -p /etc/v2ray
 touch /etc/xray/domain
